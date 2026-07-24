@@ -2,3 +2,5 @@ src/deep-learning/alexnet_from_scratch/runs/scratch/best.pt
 src/deep-learning/alexnet_from_scratch/runs/scratch/small_best.pt
 src/deep-learning/alexnet_from_scratch/runs/scratch/last.pt
 src/deep-learning/alexnet_from_scratch/runs/scratch/small_last.pt
+src/deep-learning/alexnet-pretrained/runs/scratch/last.pt
+src/deep-learning/alexnet-pretrained/runs/scratch/best.pt
