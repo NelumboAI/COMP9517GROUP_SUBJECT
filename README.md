@@ -1,10 +1,10 @@
 # COMP9517 Group Project — Fine-Grained Species Classification
 
 [![Course](https://img.shields.io/badge/Course-COMP9517-blue)]()
-[![Term](https://img.shields.io/badge/Term-2026%20T2-lightgrey)]()
+[![Term](<https://img.shields.io/badge/Term-2026%20T2-lightgrey>)]()
 [![Dataset](https://img.shields.io/badge/Dataset-iNaturalist--2021-green)]()
-[![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)]()
-[![License](https://img.shields.io/badge/License-Academic%20Use%20Only-red)]()
+[![Status](<https://img.shields.io/badge/Status-In%20Progress-yellow>)]()
+[![License](<https://img.shields.io/badge/License-Academic%20Use%20Only-red>)]()
 
 ## Overview
 
@@ -21,7 +21,7 @@ Fine-grained species recognition is a core challenge in biodiversity monitoring 
 
 ## Dataset
 
-- **Source:** [iNaturalist-2021 "Mini" split](https://github.com/visipedia/inat_comp/tree/master/2021) (`train_mini`, `val`)
+- **Source:** [iNaturalist-2021 &#34;Mini&#34; split](https://github.com/visipedia/inat_comp/tree/master/2021) (`train_mini`, `val`)
 - **Subset used:** ≥ 500 randomly sampled species, with 40 training / 10 validation images per class, and 10 held-out test images per class (drawn from the official validation set)
 - **Data integrity:** Training, validation, and test splits are kept strictly separate throughout all experiments to prevent data leakage.
 
@@ -29,13 +29,13 @@ Fine-grained species recognition is a core challenge in biodiversity monitoring 
 
 ## Methods
 
-| Category | Approach | Status |
-|---|---|---|
-| Traditional | Bag-of-Visual-Words (SIFT) + SVM | 🔲 |
-| Traditional | HOG / LBP + Random Forest | 🔲 |
-| Deep Learning | CNN trained from scratch | 🔲 |
-| Deep Learning | CNN with ImageNet-pretrained weights (transfer learning) | 🔲 |
-| Explainability | Grad-CAM analysis | 🔲 |
+| Category       | Approach                                                                                 | Status |
+| -------------- | ---------------------------------------------------------------------------------------- | ------ |
+| Traditional    | Bag-of-Visual-Words (SIFT) + SVM                                                         | 🔲     |
+| Traditional    | HOG / LBP + Random Forest                                                                | 🔲     |
+| Deep Learning  | AlexNet trained from scratch and pretrained weights (transfer learning)                | 🚧     |
+| Deep Learning  | ResNet 18 and ResNet50 trained from scratch and pretrained weights (transfer learning) | 🚧     |
+| Explainability | Grad-CAM analysis                                                                        | 🚧     |
 
 *(Update the status column as components are completed — 🔲 Planned · 🚧 In Progress · ✅ Done)*
 
@@ -47,7 +47,8 @@ COMP9517GROUP_SUBJECT/
 ├── notebooks/             # Exploratory analysis and prototyping notebooks
 ├── src/
 │   ├── traditional/       # Handcrafted-feature pipelines (SIFT, HOG, LBP, SVM, RF)
-│   ├── deep_learning/     # CNN architectures, training, and fine-tuning scripts
+│   ├── AlexNet/           # AlexNet architectures, training, and fine-tuning scripts
+│   ├── ResNet/            # ResNet architectures, training, and fine-tuning scripts
 │   ├── evaluation/        # Metrics, confusion matrix, macro-F1 computation
 │   └── explainability/    # Grad-CAM and visualisation utilities
 ├── configs/                # Experiment configuration files
@@ -80,11 +81,13 @@ Refer to [`data/README.md`](data/README.md) for instructions on downloading the 
 ### Running Experiments
 
 ```bash
+#TODO: change it to running python script destination
+
 # Traditional pipeline
 python src/traditional/train.py --config configs/bovw_svm.yaml
 
 # Deep learning pipeline
-python src/deep_learning/train.py --config configs/resnet_pretrained.yaml
+python src/AlexNet/train.py --config configs/resnet_pretrained.yaml
 ```
 
 ## Results
@@ -93,13 +96,13 @@ Quantitative results, training curves, and confusion matrices will be added to [
 
 ## Team
 
-| Name | Contribution Area |
-|---|---|
-| Anrui Geng | |
-| Haochen Han | |
-| Sergio Insuasti | |
-| Zhirong Mai | |
-| Zhiyang Liu | Evaluation metrics, dataset splits, Grad-CAM explainability, report (LaTeX/CVPR) integration |
+| Name            | Contribution Area                                                                            |
+| --------------- | -------------------------------------------------------------------------------------------- |
+| Anrui Geng      |                                                                                              |
+| Haochen Han     |                                                                                              |
+| Sergio Insuasti | AlexNet trained from scratch and pretrained weights (transfer learning)                    |
+| Zhirong Mai     | ResNet trained from scratch and pretrained weights (transfer learning)                      |
+| Zhiyang Liu     | Evaluation metrics, dataset splits, Grad-CAM explainability, report (LaTeX/CVPR) integration |
 
 ## References
 
