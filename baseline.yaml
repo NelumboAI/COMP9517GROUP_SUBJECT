@@ -1,0 +1,21 @@
+data:
+  root_dir: "D:/dataset/sampled_500"
+
+features:
+  hog_resize: [128, 128]
+  lbp_resize: [128, 128]
+  sift_resize: [256, 256]
+  sift_vocab_size: 500
+
+classifier:
+  svm:
+    kernel: "rbf"
+    C: 1.0
+    gamma: "scale"
+  rf:
+    n_estimators: 100
+    max_depth: null
+
+experiment:
+  seed: 42
+  test_split: "val"

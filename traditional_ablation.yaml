@@ -1,0 +1,34 @@
+data:
+  root_dir: "data/inat2021"
+
+experiment:
+  seed: 42
+  n_classes: 500
+  train_per_class: 40
+  val_per_class: 10
+
+features:
+  hog:
+    - name: hog_64
+      resize: [64, 64]
+      orientations: 9
+      pixels_per_cell: [8, 8]
+      cells_per_block: [2, 2]
+
+  lbp:
+    - name: lbp_r1
+      resize: [128, 128]
+      radius: 1
+      n_points: 8
+
+  sift:
+    - name: sift_vocab200
+      resize: [256, 256]
+      vocab_size: 200
+
+classifiers:
+  sgd_svm:
+    - name: sgd_svm_c1
+      alpha: 0.0001
+      max_iter: 1000
+      tol: 0.001

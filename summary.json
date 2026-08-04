@@ -1,0 +1,32 @@
+{
+  "HOG_SVM": {
+    "accuracy": 0.0236,
+    "f1_macro": 0.017230903457680316,
+    "top5_accuracy": 0.001
+  },
+  "HOG_RF": {
+    "accuracy": 0.009,
+    "f1_macro": 0.007312928150855198,
+    "top5_accuracy": null
+  },
+  "LBP_SVM": {
+    "accuracy": 0.019,
+    "f1_macro": 0.008957241228710021,
+    "top5_accuracy": 0.0006
+  },
+  "LBP_RF": {
+    "accuracy": 0.0116,
+    "f1_macro": 0.010993844525803138,
+    "top5_accuracy": null
+  },
+  "SIFT_SVM": {
+    "accuracy": 0.0502,
+    "f1_macro": 0.03770786714129386,
+    "top5_accuracy": 0.0008
+  },
+  "SIFT_RF": {
+    "accuracy": 0.0194,
+    "f1_macro": 0.015447738845774014,
+    "top5_accuracy": null
+  }
+}
