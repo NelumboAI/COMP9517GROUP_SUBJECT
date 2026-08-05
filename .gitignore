@@ -6,6 +6,7 @@
 /reproduction_outputs/
 /reproduction/outputs/
 /reproduction/logs/
+/tmp/
 
 # Local Python environment and caches
 /.9517venv/
