@@ -35,7 +35,7 @@ Fine-grained species recognition is a core challenge in biodiversity monitoring 
 | Traditional    | HOG / LBP + Random Forest                                                                | DONE |
 | Deep Learning  | AlexNet trained from scratch and pretrained weights (transfer learning)                | DONE |
 | Deep Learning  | ResNet 18 and ResNet50 trained from scratch and pretrained weights (transfer learning) | DONE |
-| Explainability | Grad-CAM analysis                                                                        | DONE |
+| Advanced Method Development | Grad-CAM analysis,robustness to image degradation at test time,effect of the number of classes                                                                       | DONE |
 
 ## Repository Structure
 
