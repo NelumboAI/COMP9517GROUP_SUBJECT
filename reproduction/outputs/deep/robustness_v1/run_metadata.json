@@ -1,0 +1,123 @@
+{
+  "status": "completed",
+  "device": "cuda",
+  "seed": 0,
+  "dataset": "C:\\Users\\17111\\COMP9517GROUP_SUBJECT\\data\\inat2021\\reproduced\\sampled_500\\val",
+  "checkpoints": "C:\\Users\\17111\\COMP9517GROUP_SUBJECT\\data\\models\\deep_checkpoints",
+  "batch_size": 32,
+  "workers": 2,
+  "max_images": null,
+  "conditions": [
+    {
+      "degradation": "clean",
+      "severity": 0,
+      "parameter_name": "none",
+      "parameter_value": 0.0
+    },
+    {
+      "degradation": "gaussian_noise",
+      "severity": 1,
+      "parameter_name": "sigma",
+      "parameter_value": 0.03
+    },
+    {
+      "degradation": "gaussian_noise",
+      "severity": 2,
+      "parameter_name": "sigma",
+      "parameter_value": 0.06
+    },
+    {
+      "degradation": "gaussian_noise",
+      "severity": 3,
+      "parameter_name": "sigma",
+      "parameter_value": 0.12
+    },
+    {
+      "degradation": "gaussian_noise",
+      "severity": 4,
+      "parameter_name": "sigma",
+      "parameter_value": 0.2
+    },
+    {
+      "degradation": "gaussian_blur",
+      "severity": 1,
+      "parameter_name": "sigma",
+      "parameter_value": 0.8
+    },
+    {
+      "degradation": "gaussian_blur",
+      "severity": 2,
+      "parameter_name": "sigma",
+      "parameter_value": 1.5
+    },
+    {
+      "degradation": "gaussian_blur",
+      "severity": 3,
+      "parameter_name": "sigma",
+      "parameter_value": 2.5
+    },
+    {
+      "degradation": "gaussian_blur",
+      "severity": 4,
+      "parameter_name": "sigma",
+      "parameter_value": 4.0
+    },
+    {
+      "degradation": "motion_blur",
+      "severity": 1,
+      "parameter_name": "kernel_size",
+      "parameter_value": 3
+    },
+    {
+      "degradation": "motion_blur",
+      "severity": 2,
+      "parameter_name": "kernel_size",
+      "parameter_value": 7
+    },
+    {
+      "degradation": "motion_blur",
+      "severity": 3,
+      "parameter_name": "kernel_size",
+      "parameter_value": 11
+    },
+    {
+      "degradation": "motion_blur",
+      "severity": 4,
+      "parameter_name": "kernel_size",
+      "parameter_value": 17
+    },
+    {
+      "degradation": "jpeg_compression",
+      "severity": 1,
+      "parameter_name": "quality",
+      "parameter_value": 80
+    },
+    {
+      "degradation": "jpeg_compression",
+      "severity": 2,
+      "parameter_name": "quality",
+      "parameter_value": 60
+    },
+    {
+      "degradation": "jpeg_compression",
+      "severity": 3,
+      "parameter_name": "quality",
+      "parameter_value": 40
+    },
+    {
+      "degradation": "jpeg_compression",
+      "severity": 4,
+      "parameter_name": "quality",
+      "parameter_value": 20
+    }
+  ],
+  "models": [
+    "inat_alexnet_500_npclasses_imagenet.pth",
+    "inat_alexnet_500_ptclasses_imagenet.pth",
+    "inat_resnet18_500_npclasses_imagenet.pth",
+    "inat_resnet18_500_ptclasses_imagenet.pth",
+    "inat_resnet50_500_npclasses_imagenet.pth",
+    "inat_resnet50_500_ptclasses_imagenet.pth"
+  ],
+  "completed_conditions": 102
+}

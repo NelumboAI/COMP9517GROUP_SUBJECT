@@ -1,1 +1,19 @@
 *.pth
+*.pkl
+*.npy
+
+/data/
+/reproduction_outputs/
+/reproduction/outputs/
+/reproduction/logs/
+/tmp/
+
+# Local Python environment and caches
+/.9517venv/
+__pycache__/
+*.pyc
+
+# Local reproduction copies and machine-specific files
+/reproduction/reference_snapshot/
+/reproduction/working_code/
+/reproduction/manifests/sampled_500_manifest.json

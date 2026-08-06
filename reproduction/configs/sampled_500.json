@@ -1,0 +1,10 @@
+{
+  "source": "data/inat2021",
+  "output": "data/inat2021/reproduced/sampled_500",
+  "manifest": "reproduction/manifests/sampled_500_manifest.json",
+  "classes": 500,
+  "train_per_class": 40,
+  "validation_per_class": 10,
+  "seed": 0,
+  "reference_notebook": "src/imageNet/train.ipynb"
+}
