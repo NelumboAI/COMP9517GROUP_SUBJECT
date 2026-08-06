@@ -100,7 +100,7 @@ Quantitative results, training curves, and confusion matrices will be added to [
 | Haochen Han     | Traditional computer vision pipeline using HOG, LBP, and SIFT-BoVW with SGD-SVM; ablation studies, result visualisation, and error analysis |
 | Sergio Insuasti | AlexNet trained from scratch and pretrained weights (transfer learning)                    |
 | Zhirong Mai     | ResNet trained from scratch and pretrained weights (transfer learning)                      |
-| Zhiyang Liu     | Grad-CAM explainability, robustness evaluation , report (LaTeX/CVPR) integration |
+| Zhiyang Liu     | Grad-CAM explainability, robustness evaluation , test effect of the number of classes of traditional methods, report (LaTeX/CVPR) integration |
 
 ## References
 
