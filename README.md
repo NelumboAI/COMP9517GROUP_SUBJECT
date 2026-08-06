@@ -31,13 +31,11 @@ Fine-grained species recognition is a core challenge in biodiversity monitoring 
 
 | Category       | Approach                                                                                 | Status |
 | -------------- | ---------------------------------------------------------------------------------------- | ------ |
-| Traditional    | Bag-of-Visual-Words (SIFT) + SVM                                                         | 🔲     |
-| Traditional    | HOG / LBP + Random Forest                                                                | 🔲     |
-| Deep Learning  | AlexNet trained from scratch and pretrained weights (transfer learning)                | 🚧     |
-| Deep Learning  | ResNet 18 and ResNet50 trained from scratch and pretrained weights (transfer learning) | 🚧     |
-| Explainability | Grad-CAM analysis                                                                        | 🚧     |
-
-*(Update the status column as components are completed — 🔲 Planned · 🚧 In Progress · ✅ Done)*
+| Traditional    | Bag-of-Visual-Words (SIFT) + SVM                                                         | DONE |
+| Traditional    | HOG / LBP + Random Forest                                                                | DONE |
+| Deep Learning  | AlexNet trained from scratch and pretrained weights (transfer learning)                | DONE |
+| Deep Learning  | ResNet 18 and ResNet50 trained from scratch and pretrained weights (transfer learning) | DONE |
+| Explainability | Grad-CAM analysis                                                                        | DONE |
 
 ## Repository Structure
 
@@ -102,7 +100,7 @@ Quantitative results, training curves, and confusion matrices will be added to [
 | Haochen Han     |                                                                                              |
 | Sergio Insuasti | AlexNet trained from scratch and pretrained weights (transfer learning)                    |
 | Zhirong Mai     | ResNet trained from scratch and pretrained weights (transfer learning)                      |
-| Zhiyang Liu     | Evaluation metrics, dataset splits, Grad-CAM explainability, report (LaTeX/CVPR) integration |
+| Zhiyang Liu     | Grad-CAM explainability, robustness evaluation , report (LaTeX/CVPR) integration |
 
 ## References
 
