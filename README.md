@@ -96,8 +96,8 @@ Quantitative results, training curves, and confusion matrices will be added to [
 
 | Name            | Contribution Area                                                                            |
 | --------------- | -------------------------------------------------------------------------------------------- |
-| Anrui Geng      |                                                                                              |
-| Haochen Han     |                                                                                              |
+| Anrui Geng      | Traditional computer vision pipeline using HOG, LBP, and SIFT-BoVW with SGD-SVM; ablation studies, result visualisation, and error analysis |
+| Haochen Han     | Traditional computer vision pipeline using HOG, LBP, and SIFT-BoVW with SGD-SVM; ablation studies, result visualisation, and error analysis |
 | Sergio Insuasti | AlexNet trained from scratch and pretrained weights (transfer learning)                    |
 | Zhirong Mai     | ResNet trained from scratch and pretrained weights (transfer learning)                      |
 | Zhiyang Liu     | Grad-CAM explainability, robustness evaluation , report (LaTeX/CVPR) integration |
